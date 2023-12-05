@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rock Paper Scissors</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" href="img/rock/rock.png" type="image/png">
+    </head>
+    <body>
+
+        <h1>Rochambeau</h1>
+        <h2 id="winnerText">Rock, Paper, Scissors</h2>
+
+        <div id="choiceWrapper">
+            <button id="rock" class="choiceButton" onclick="selectMove('rock')" ><img id="rockImage" src="img/rock/rock.png" alt="rock image"></button>
+            <button id="paper" class="choiceButton" onclick="selectMove('paper')" ><img id="paperImage" src="img/paper/paper.png" alt="paper image"></button>
+            <button id="scissors" class="choiceButton" onclick="selectMove('scissors')" ><img id="scissorsImage" src="img/scissors/scissors.png" alt="scissors image"></button>
+        </div>
+
+        <!-- adds script and play button-->
+        <script src="rockPaperScissors.js" defer></script>
+        <div class="buttonContainer">
+            <button id="gameButton" onclick="rockPaperScissors()" >Let's Go!</button>
+        </div>
+
+    </body>
+</html>
